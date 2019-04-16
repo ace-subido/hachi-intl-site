@@ -1,0 +1,10 @@
+{
+  "name": "hachi-intl-site",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Ace Subido <ace.subido@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "bootstrap": "^4.3.1"
+  }
+}
