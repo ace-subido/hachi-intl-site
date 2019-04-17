@@ -14,7 +14,13 @@
       -webkit-filter: grayscale(100%);
       margin: 1.5rem;
       opacity: 0.5;
-      max-width: 85px;
+      max-width: 84px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      img {
+        max-width: 60px;
+      }
     }
   }
 }

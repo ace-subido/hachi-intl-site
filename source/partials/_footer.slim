@@ -1,6 +1,7 @@
 footer.text-center.text-muted
-  ' All rights reserved, Hachi International Inc.
-  = Time.now.year
   ul.list-inline
     - data.social_platforms.pages.each do |s|
-      li.list-inline-item = link_to s.platform, s.url
+      li.list-inline-item = link_to s.name, s.url
+  span
+    ' All rights reserved, Hachi International Inc.
+    = Time.now.year

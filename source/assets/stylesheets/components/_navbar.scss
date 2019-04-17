@@ -1,0 +1,12 @@
+.navbar-brand {
+  img {
+    height: 30px;
+  }
+
+
+  @include media-breakpoint-down(sm) {
+    img {
+      height: 24px;
+    }
+  }
+}

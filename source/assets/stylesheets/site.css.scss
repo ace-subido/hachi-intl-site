@@ -1,8 +1,13 @@
 @import "globals/bootstrap_overrides";
-@import "globals/variables";
-@import "components/hero";
-@import "components/social_proof";
-@import "components/footer";
 
 @import "bootstrap/scss/bootstrap";
 
+@import "globals/variables";
+@import "globals/typography";
+
+@import "components/hero";
+@import "components/social_proof";
+@import "components/footer";
+@import "components/sections";
+@import "components/buttons";
+@import "components/navbar";
