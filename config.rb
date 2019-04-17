@@ -14,10 +14,20 @@ set :images_dir, 'assets/images'
 set :js_dir, 'assets/javascripts'
 
 configure :build do
+  activate :asset_hash
   activate :minify_css
   activate :minify_javascript
+  activate :gzip
+  set :relative_links, true
+  activate :relative_assets
 end
 
 configure :development do
   activate :livereload
+end
+
+activate :deploy do |deploy|
+  deploy.deploy_method  = :git
+  deploy.branch = 'gh-pages'
+  deploy.build_before   = true
 end
